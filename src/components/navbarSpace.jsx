@@ -4,7 +4,7 @@ const NavbarSpacex = () => {
 
     return (
         <>
-            <div className="border bg-[#000] p-5 flex ">
+            <div className="border bg-[#000] p-5 flex fi">
                 <div className=" md:container mx-auto flex space-x-11 mt-4 text-white">
                     <div id="logo-spacex" className="">
                         <Link to="/">

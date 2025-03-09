@@ -5,6 +5,10 @@ const Home  = () =>{
         <>
             <main className=""id="home-pic" >
             </main>
+
+            <div className='text-center p-11  mt-3 text-2xl font-bold'>
+                <h1 className=''>TRENDING</h1>
+            </div>
         </>
     )
 }
