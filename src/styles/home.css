@@ -1,0 +1,10 @@
+#home-pic {
+    position: relative;
+    background-image: url('https://shop.spacex.com/cdn/shop/files/SPACEX_SHOP_BANNER_3_838be52d-c3a8-401a-98f3-da88ede26411_1400x.png?v=1737149002');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 428px; /* Ajustez la hauteur selon vos besoins */
+}
+
+
