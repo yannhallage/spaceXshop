@@ -1,3 +1,4 @@
+
 import { dataPoduct } from "../hooks/dataProductComponent";
 
 const ProductComponent = () => {
