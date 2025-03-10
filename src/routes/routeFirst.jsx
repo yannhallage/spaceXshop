@@ -13,9 +13,9 @@ const FirstRoute = () => {
                 <NavbarSpacex />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Mens" element={<Mens />} />
-                    <Route path="/Womens" element={<Womens />} />
-                    <Route path="/Accessories" element={<Accessories />} />
+                    <Route path="/mens" element={<Mens />} />
+                    <Route path="/womens" element={<Womens />} />
+                    <Route path="/accessories" element={<Accessories />} />
                 </Routes>
             </Router>
         </>

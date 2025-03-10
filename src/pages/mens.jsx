@@ -3,7 +3,7 @@
 const Mens  = () =>{
     return (
         <>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis pariatur ut odit illum nisi voluptates obcaecati animi porro incidunt ad nobis quos velit fuga quasi, sed omnis, perspiciatis consequuntur asperiores.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ipsa iste blanditiis, nam cum quasi nihil dolore maxime optio rerum veniam qui harum perferendis molestiae quaerat. Minus dolorem eos vel.    
         </>
     )
 }

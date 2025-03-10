@@ -1,14 +1,32 @@
-import '../styles/home.css'    
+import '../styles/home.css'
+import ButtonComponent from '../components/buttonComponent';
+import FooterSpaceX from '../components/footerSpace';
+import ProductComponent from '../components/productComponent';
 
-const Home  = () =>{
+const Home = () => {
     return (
         <>
-            <main className=""id="home-pic" >
-            </main>
+            <main>
+                <div className='' id='home-pic'>
+                </div>
 
-            <div className='text-center p-11  mt-3 text-2xl font-bold'>
-                <h1 className=''>TRENDING</h1>
-            </div>
+                <section className=' p-11'>
+                    <div className='text-center p-4 text-[32px] '>
+                        <p>
+                            trending
+                        </p>
+                    </div>
+                </section>
+                <section >
+                    <ProductComponent/>
+                </section>
+                <section>
+                    <ButtonComponent />
+                </section>
+                <section>
+                    <FooterSpaceX />
+                </section>
+            </main>
         </>
     )
 }
