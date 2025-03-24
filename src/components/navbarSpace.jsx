@@ -5,7 +5,7 @@ const NavbarSpacex = () => {
     return (
         <>
           
-            <nav className="bg-black ">
+            <nav className="bg-black">
                 <div className="mx-auto max-w-7xl p-2 px-2 sm:px-6 lg:px-8">
                     <div className="relative flex h-16 items-center justify-between">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -28,7 +28,7 @@ const NavbarSpacex = () => {
                                 <Link to="/">
                                     <img src="https://shop.spacex.com/cdn/shop/files/SpaceX_logo_white_6eaf0441-42af-4396-974e-d6dc2f8ff45c_160x.png?v=1614778073%201x,%20//shop.spacex.com/cdn/shop/files/SpaceX_logo_white_6eaf0441-42af-4396-974e-d6dc2f8ff45c_160x@2x.png?v=1614778073%202x" alt="" />
                                 </Link>                            </div>
-                            <div className="hidden sm:ml-6 sm:block">
+                            <div className="hidden  sm:ml-6 sm:block">
                                 <div className="flex space-x-4 py-4">
                                     {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                                     <Link to="/collection/mens" className="rounded-md  px-3 py-2 text-sm font-medium text-white">MENS</Link>
