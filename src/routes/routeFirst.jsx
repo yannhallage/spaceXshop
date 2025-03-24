@@ -16,6 +16,8 @@ const FirstRoute = () => {
                     <Route path="/collection/mens" element={<Mens />} />
                     <Route path="/collection/womens" element={<Womens />} />
                     <Route path="/collection/accessories" element={<Accessories />} />
+                    <Route path="/collection/Products" element={<Accessories />} />
+                    <Route path="/collection/Card" element={<Accessories />} />
                 </Routes>
             </Router>
         </>

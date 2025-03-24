@@ -4,9 +4,8 @@ import { dataPoduct } from "../hooks/dataProductComponent";
 const ProductComponent = () => {
 
     if (dataPoduct) {
-        console.log(dataPoduct.length)
+        console.log(true)
     }
-
     return (
         <>
             <div className='container mx-auto'>
