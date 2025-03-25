@@ -1,20 +1,21 @@
 
-import { dataMen, dataRecentlyViewed,dataAccessoires } from "../hooks/dataProductComponent";
+import { dataMen, dataRecentlyViewed, dataAccessoires } from "../hooks/dataProductComponent";
 
-const RecentlyComponent = ({text}) => {
+const RecentlyComponent = ({ text }) => {
 
     return (
         <>
-          {text === 'accessoire' ? <Acces /> : <Human />}
+            {text === 'accessoire' ? <Acces /> : <Human />}
         </>
     )
 }
 
 
 const Acces = () => {
+
     return (
         <>
-        <div className="">
+            <div className="">
                 <hr className="text-[#ccc]" />
                 <div className="mt-19">
                     <div className="container mx-auto space-y-17">
@@ -63,16 +64,14 @@ const Human = () => {
                             {
                                 dataRecentlyViewed.map((item, index) => {
                                     return (
-                                        <>
-                                            <div className="bg-white cursor-pointer" key={index}>
-                                                <img src={item.name} alt="image" />
-                                                <div className=' p-3  text-center'>
-                                                    <p>
-                                                        SpaceX Starship Flight 8 T-Shirt <br /> <span className='text-[14px]'>{item.price}</span>
-                                                    </p>
-                                                </div>
+                                        <div className="bg-white cursor-pointer" key={index}>
+                                            <img src={item.name} alt="image" />
+                                            <div className=' p-3  text-center'>
+                                                <p>
+                                                    SpaceX Starship Flight 8 T-Shirt <br /> <span className='text-[14px]'>{item.price}</span>
+                                                </p>
                                             </div>
-                                        </>
+                                        </div>
                                     )
                                 })
                             }

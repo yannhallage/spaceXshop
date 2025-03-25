@@ -7,7 +7,7 @@ export default function App() {
   const existingContext = useContext(context);
 
   // Création de l'état local si nécessaire
-  const [products, setProducts] = useState(existingContext?.products || []);
+  const [products, setProducts] = useState();
 
   return (
     <context.Provider value={{ products, setProducts }}>
