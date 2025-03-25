@@ -1,7 +1,11 @@
+import { useContext ,useState} from "react";
 import { Link } from "react-router-dom";
+import { context } from "../Context/contextProduct";
 
 const NavbarSpacex = () => {
 
+    const {productsvalidate, setProductsvalidate} = useContext(context)
+    const [search, setSearch] = useState('')
     return (
         <>
           
@@ -44,7 +48,7 @@ const NavbarSpacex = () => {
                                 <div>
                                     <Link to="/collection/accessories" className="rounded-md px-3 py-2 text-sm font-medium text-white">ACCOUNT</Link>
                                     {/* ><Link to="/collection/accessories">SEARCH</Link></a> */}
-                                    <Link to="/collection/accessories" className="rounded-md px-3 py-2 text-sm font-medium text-white">CARTS</Link>
+                                    <Link to="/collection/Cart" className="rounded-md px-3 py-2 text-sm font-medium text-white">CART ({productsvalidate})</Link>
                                 </div>
                             </div>
                         </div>

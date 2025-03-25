@@ -5,6 +5,7 @@ import Accessories from "../pages/accessories";
 import Home from "../pages/home";
 import NavbarSpacex from "../components/navbarSpace";
 import Products from "../pages/products";
+import CartComponent from "../pages/cartComponent";
 
 const FirstRoute = () => {
     return (
@@ -18,7 +19,7 @@ const FirstRoute = () => {
                     <Route path="/collection/womens" element={<Womens />} />
                     <Route path="/collection/accessories" element={<Accessories />} />
                     <Route path="/collection/Products" element={<Products />} />
-                    <Route path="/collection/Card" element={<Accessories />} />
+                    <Route path="/collection/Cart" element={<CartComponent />} />
                 </Routes>
             </Router>
         </>

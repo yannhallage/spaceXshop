@@ -1,13 +1,20 @@
 import { useContext, useState } from "react";
 import FooterSpaceX from "../components/footerSpace";
 import { context } from "../Context/contextProduct";
+import { Link,useNavigate } from "react-router-dom";
 import "../styles/button.css";
 import RecentlyComponent from "../components/recentlyComponent";
 
 const Products = () => {
-    const { products } = useContext(context);
+    const { products ,productsvalidate, setProductsvalidate,compte,setCompte,quantite,setquantite} = useContext(context);
     const [count, setCount] = useState(1);
+    const navigate = useNavigate();
+    const [valeur , setValeur] = useState(products.id)
 
+    if(products){
+        console.log(products)
+        // console.log(products.id)
+    }
     // Augmenter la quantité
     const addPacket = () => {
         setCount(count + 1);
@@ -19,10 +26,17 @@ const Products = () => {
             setCount(count - 1);
         }
     };
-
+    // pagnet valider
+    const validatePacket = ()=>{
+        setProductsvalidate(productsvalidate+1)
+        setquantite(count)
+        setCompte(valeur)
+        console.log(productsvalidate+1 , count,compte)
+    }
     // Vérification si products est défini
     if (!products) {
         return (
+            // navigate('collection/mens')
             <main>
                 <section className="mt-11 text-center">
                     <p className="text-xl text-gray-500">Aucun produit sélectionné.</p>
@@ -98,7 +112,9 @@ const Products = () => {
 
                                     {/* Bouton Ajouter au panier */}
                                     <div>
-                                        <button className="border w-full p-4 text-white bg-black cursor-pointer hover:bg-gray-800" id="addToCart">
+                                        <button className="border w-full p-4 text-white bg-black cursor-pointer" id="addToCart" 
+                                            onClick={validatePacket}
+                                        >
                                             ADD TO CART
                                         </button>
                                     </div>

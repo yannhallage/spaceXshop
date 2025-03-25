@@ -6,7 +6,7 @@ import ProductComponent from '../components/productComponent';
 const Home = () => {
     return (
         <>
-            <main>
+            <main className='animate__animated animate__fadeIn'>
                 <div className='' id='home-pic'>
                 </div>
 
